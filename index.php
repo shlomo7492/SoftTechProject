@@ -16,7 +16,7 @@
 <?php
 echo "Parameter passed -> " . $_GET['id'].$_SERVER["QUERY_STRING"];
 ?>
-Here is something...
+Here is something...Brrrr
 </br>
 <?php
 echo $_SERVER['PHP_SELF'];
