@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
  # RewriteRule ^([^\.]+)$ $1.php [NC,L]
-
+ ## All code here is due to RealBG aka Иван Йонков, all respect to him.
     RewriteEngine On
     RewriteCond %{REQUEST_URI} !/js/.*$
     RewriteRule ^ index.php
