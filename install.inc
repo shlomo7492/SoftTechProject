@@ -1,5 +1,6 @@
 <?php
 
+//installing in few steps
     if ($dbname == "" || $username =="" || $password=="") {
 
        if ($_POST["step"]==1) {

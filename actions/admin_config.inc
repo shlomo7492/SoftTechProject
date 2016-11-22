@@ -27,7 +27,7 @@ else
     echo 'Connection successfull';
 }
 
-
+//Inserts data in to the Database
 
 $sql = "INSERT INTO `myBlogDB`.`Users` (`user_id`, `fullName`, `user_Pass`, `email`, `gender`,`birthdate`, `date_Registered`, `account_Type`) 
 VALUES (Null, '$name', '$user_Pass', '$email', '$gender', '$birthdate','$date_Registered', '$accountType')";

@@ -1,4 +1,4 @@
-
+<!-Getting the setup info for out DataBase ->
 <h2> Your blog Database needs to be configured!</h2>
 <h3> We will install your blog for you in few easy to follow steps.</h3>
 <h3>Please provide your Data Base information in the form below</h3>

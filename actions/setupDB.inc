@@ -1,4 +1,6 @@
 <?php
+
+//Installing the DataBase
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection

@@ -1,4 +1,5 @@
 <?php
+//writing to config.inc file
 echo "The configuration data is successfuly written into DataBase configuration file.";
 $myfile = fopen("config.inc", "w") or die("Unable to open file!");
 

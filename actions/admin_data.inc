@@ -3,7 +3,7 @@ echo '<h2> Your blog first Admin!';
 echo '<h1> Installing your blog</h1>';
 echo '<h3>Please provide your Data Base information</h3>';
 
-
+//Form to get all admin user data
 echo '
 <form action="index.php" method="post">
     Full Name: <input type="text" name="fullName"><br>
