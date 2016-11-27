@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../SoftTechProject/.idea/MyBlog.iml" filepath="$PROJECT_DIR$/../SoftTechProject/.idea/MyBlog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MyBlog.iml" filepath="$PROJECT_DIR$/.idea/MyBlog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SoftTechProject.iml" filepath="$PROJECT_DIR$/.idea/SoftTechProject.iml" />
     </modules>
   </component>
 </project>

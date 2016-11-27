@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 <?php
     session_start();
 /**
@@ -18,14 +19,6 @@
     }
 ?>
 
-<?php
-/*
-    if ($site_location =='frontpage') {
-        include '/template/front_main.tpl';
-    }
-    else{
-        include '/template/front_main.tpl';
-    }*/
- ?>
+
 
 

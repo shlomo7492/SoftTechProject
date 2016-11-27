@@ -1,1 +1,53 @@
+/*----------------------Form handling----------------------*/
+form span
+{
+    margin-left:20px;
+    float: left;
+}
+form input
+{
+    vertical-align:bottom;
+    float:right;
+    margin-right:20px;
+    border-radius:5px;
+    border: 1px solid #555;
+    padding:5px;
+}
+.submit
+{
+    padding:5px;
+    background:#558;
+    font:normal 1em arial;
+    border:1px solid #555;
+    color:#CCC;
+    margin-top:-5px;
+}
+.submit:hover
+{
+    padding:5px;
+    background:#88a;
+    font:normal 1em arial;
+    border:1px solid #555;
+    color:#CCC;
+    margin-top:-5px;
+}
+.formFrame
+{
+    top:50px;
+    left:50px;
+    width:750px;
+    background:#ddf;
+    padding:15px;
+    border: 1px solid #333; border-radius: 5px;
+    font:normal 1em arial;
+    position:relative;
+}
+h2
+{	left:60px;
+    margin-top:50px;
+    margin-bottom:-40px;
 
+    font:bold 2em arial;
+    position:relative;
+}
+/*----------------------END Form handling----------------------*/

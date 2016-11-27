@@ -1,21 +1,19 @@
-<?php
-echo '<h2> Your blog first Admin!';
-echo '<h1> Installing your blog</h1>';
-echo '<h3>Please provide your Data Base information</h3>';
+<h2> Your blog first Admin!</h2>
+<div class="formFrame">
+    <h3>Please enter admin information.</h3>
 
-//Form to get all admin user data
-echo '
-<form action="index.php" method="post">
-    Full Name: <input type="text" name="fullName"><br>
-    Password: <input type="password" name="password"><br>
-    E-mail: <input type="text" name="email"><br>
-    Gender: <input type="radio" name="gender" value="male" checked> Male &nbsp;
-    <input type="radio" name="gender" value="female" > Female <br>
-    Birth date(YYYY-MM-DD): <input type="date" name="birthday" ><br> 
-    <input type="hidden" name="step" value="4">
-    <input type="submit" value="Continue to step four &rarr; ">
-</form>
-';
-?>
+    <!--Form to get all admin user data-->
+
+    <form action="index.php" method="post">
+        <span>Full Name:</span> <input type="text" name="fullName" size="50"><br><br>
+        <span>Password:</span><input type="password" name="password" size="50"><br><br>
+        <span> E-mail:</span> <input type="text" name="email" size="50"><br><br>
+        <span>Gender:</span> <span><input type="radio" name="gender" value="male" checked> Male</span> &nbsp;
+        <span><input type="radio" name="gender" value="female" > Female</span> <br><br>
+        <span>Birth date(YYYY-MM-DD):</span> <input type="text" name="birthday" size="50"><br><br>
+        <input type="hidden" name="step" value="4"><br>
+        <input type="submit" value="Continue to step four &#9658;" class="submit">
+    </form>
+</div>
 
 

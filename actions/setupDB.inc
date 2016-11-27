@@ -1,3 +1,4 @@
+<div class="formFrame">
 <?php
 
 //Installing the DataBase
@@ -22,7 +23,7 @@ account_Type VARCHAR(20) NOT NULL
 )";
 
 if ($conn->query($sql) === TRUE) {
-echo "Table Users created successfully";
+echo "Table Users created successfully"."\n";
 }
 else {
 echo "Error creating table Users: " . $conn->error;
@@ -41,7 +42,7 @@ FOREIGN KEY (user_id) REFERENCES Users(user_id)
 
 
 if ($conn->query($sql) === TRUE) {
-echo "Table Articles created successfully";
+echo "Table Articles created successfully"."\n";
 } else {
 echo "Error creating table Articles: " . $conn->error;
 }
@@ -58,7 +59,7 @@ FOREIGN KEY (article_id) REFERENCES Articles(article_id)
 )";
 
 if ($conn->query($sql) === TRUE) {
-echo "Table Comments created successfully";
+echo "Table Comments created successfully"."\n";
 } else {
 echo "Error creating table Comments: " . $conn->error;
 }
@@ -68,5 +69,6 @@ $conn->close();
 
 <form action="index.php" method="POST">
     <input type="hidden" name="step" value="3">
-    <input type="submit" value="Continue to step three &rarr; ">
+    <input type="submit" value="Continue to step three &#9658;" class="submit">
 </form>
+</div>
