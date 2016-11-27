@@ -44,7 +44,7 @@ echo "Error: " . $sql . "<br>" . $conn->error;
 $conn->close();
 ?>
 <form action="index.php" method="POST">
-    <input type="hidden" name="step" value="null">
+    <input type="hidden" name="step" value="">
     <input type="submit" value="Continue to your new Blog website &#9658;" class="submit">
 </form>
 </div>

@@ -1,6 +1,11 @@
-<h1>Seting up your new Blog site</h1>
-<div class="formFrame">
-
+<h1 style="left:50px;
+            margin-left:20px;
+            margin-top:50px;
+            position:relative;
+            font:bold 2em arial;
+            color:#644;">
+    Seting up your new Blog site
+</h1>
 <?php
 //installing in few steps
     if ($dbname == "" || $username =="" || $password=="") {
@@ -29,4 +34,4 @@
     }
 
 ?>
-</div>
+
