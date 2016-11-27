@@ -9,10 +9,15 @@
 <?php
      //Installing the blog
     include 'config.inc';
-    include 'install.inc';
-
+    if (($dbname == "" || $username =="" || $password=="") ||($_POST["step"] != null)) {
+        include 'install.inc';
+    }
+    else
+    {
+        echo '<p>Here comes our new design...</p>';
+    }
 ?>
-<p>Here comes our design...</p>
+
 <?php
 /*
     if ($site_location =='frontpage') {

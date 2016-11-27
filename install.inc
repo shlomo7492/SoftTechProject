@@ -1,5 +1,9 @@
-<?php
+<div style="top:50pt;
+        left:50pt;background:#88a;
+        width:550pt;padding:5pt;
+        border: 1pt #333;">
 
+<?php
 //installing in few steps
     if ($dbname == "" || $username =="" || $password=="") {
 
@@ -25,6 +29,10 @@
             $_POST['step'] = 0;
         }
     }
-
+    if ($_POST["step"]== null)
+    {
+        echo 'null';
+    }
 
 ?>
+</div>
