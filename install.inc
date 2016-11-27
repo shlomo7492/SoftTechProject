@@ -1,15 +1,5 @@
-<h1 style="font:italic bold 0.875em arial;
-        text-transform: uppercase;
-        position:relative;
-        top:30pt; left:80pt;">
-
-    Seting up your new Blog site
-</h1>
-<div style="top:50pt;
-        left:50pt;background:#ddf;
-        width:550pt;padding:5pt;
-        border: 1px solid #333; border-radius: 5pt;
-        position:relative;">
+<h1>Seting up your new Blog site</h1>
+<div class="formFrame">
 
 <?php
 //installing in few steps
