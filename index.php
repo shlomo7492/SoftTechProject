@@ -1,10 +1,4 @@
-<html>
-<head>
-    <style>
-        <?php include 'css/styles.css'; ?>
-    </style>
-</head>
-<body>
+
 <?php
 session_start();
 /**
@@ -16,17 +10,15 @@ session_start();
 <?php
 //Installing the blog
 include 'config.inc';
-if (($dbname == "" || $username =="" || $password=="") ||($_POST["step"] == null)) {
-    include 'install.inc';
+if (($dbname == "" || $username =="" || $password=="") ||($_POST["step"] != null)) {
+    include 'template/install_templ.inc';
 }
 else
 {
+    include 'actions/url_split.inc';
     echo '<p>Here comes our new design...</p>';
 }
 ?>
 
-
-</body>
-</html>
 
 
