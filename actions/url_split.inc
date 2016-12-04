@@ -1,8 +1,7 @@
 <?php
 //Printing the correct header
-include 'header.inc';
 //spliting url to array
-$str = $_SERVER['REQUEST_URI'];
+$str = strtolower($_SERVER['REQUEST_URI']);
 $urlArray = array_map('trim', explode('/', $str));
 
 //removing null values due to leading / in the url
@@ -15,18 +14,27 @@ foreach($urlArray as $key => $link)
 }
 //getting the actions according the length of the array
 $length=count($urlArray);
+echo $length.$urlArray[1];
+if (($length== 0)||($urlArray[1]=='softtechproject'))
+{
+    include 'template/front_page_templ.inc';
+
+}
 if ($length== 1)
 {
    if ($urlArray[1]='login')
    {
+       include 'template/login_page_templ.inc';
 
    }
    if ($urlArray[1]='profile')
    {
+       include 'template/profile_page_templ.inc';
 
    }
    if ($urlArray[1]='contact')
    {
+       include 'template/contact_page_templ.inc';
 
    }
 }

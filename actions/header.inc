@@ -1,18 +1,22 @@
-<?php
- if ($_POST['login']==true)
- {
-// Create connection
-     $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-     if ($conn->connect_error) {
-         die("Connection failed: " . $conn->connect_error);
-     }
+<div class="header_container ">
+    <div class="img">
+        <img src="image/logo.png"  >
+    </div>
+    <div id="main-menu" >
 
-     $email = $_POST['email'];
-     $pass = $_POST['password'];
+    <?php
 
-     $sql = "SELECT `user_id` FROM `$dbname`.`Users` WHERE `user_Pass`='$pass' AND `email`='$email'";
+    $_SESSION['logged'] = false;
 
- }
+    if ($_SESSION['logged'] == true){
+        echo "<div id='user_in'></div>";
+    }
+    if ($_SESSION['logged'] == false){
+        echo "<div id='user_out'></div>";
+    }
+    ?>
+    </div>
+</div>
 
-?>
+<div id='user_in' style="display:none;"></div>
+<div id='user_out' style="display:none;"></div>
