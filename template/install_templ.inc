@@ -9,11 +9,13 @@
         <?php include 'js/myscript.js'; ?>
     </script>
 </head>
-<body onresize="onResize()" onpageshow="onResize()" >
+
+<body>
+
+
 <?php
-    include 'actions/header.inc';
+include 'install.inc';
 ?>
-<!--content here -->
 
 </body>
 
