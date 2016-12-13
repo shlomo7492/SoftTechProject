@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My blog title</title>
+    <title>My Site title:: Contact us</title>
     <style>
         <?php include 'css/styles.css'; ?>
     </style>
@@ -10,9 +10,11 @@
     </script>
 </head>
 <body onresize="onResize()" onpageshow="onResize()" >
-<?php
-    include 'actions/header.inc';
-?>
+<header id="header">
+    <?php
+     include 'actions/header.inc';
+    ?>
+</header>
 <!--content here -->
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My blog title</title>
+    <title>My Site title:: Installing your site</title>
     <style>
         <?php include 'css/styles.css'; ?>
     </style>
