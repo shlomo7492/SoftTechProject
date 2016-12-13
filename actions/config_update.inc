@@ -4,7 +4,7 @@
     <?php
     //writing to config file
     echo "The configuration data is successfuly written into DataBase configuration file.";
-    $myfile = fopen("config.inc", "w") or die("Unable to open file!");
+    $myfile = fopen("action/config.inc", "w") or die("Unable to open file!");
 
     $text = '<?php $servername = "localhost";'."\n";
     fwrite($myfile, $text);
