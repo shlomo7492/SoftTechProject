@@ -14,7 +14,7 @@
 
 
 <?php
-include 'install.inc';
+include 'actions/install.inc';
 ?>
 
 </body>
