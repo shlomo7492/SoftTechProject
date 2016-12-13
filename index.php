@@ -9,14 +9,15 @@ session_start();
  */?>
 <?php
 //Installing the blog
-include 'config.inc';
+include 'actions/config.inc';
+echo $dbname.":".$username.":".$password.":".$servername;
 if (($dbname == "" || $username =="" || $password=="") ||($_POST["step"] != null)) {
     include 'template/install_templ.inc';
 }
 else
 {
     include 'actions/url_split.inc';
-    echo '<p>Here comes our new design...</p>';
+    //echo '<p>Here comes our new design...</p>';
 }
 ?>
 
