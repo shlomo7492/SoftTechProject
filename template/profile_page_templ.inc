@@ -9,13 +9,20 @@
         <?php include 'js/myscript.js'; ?>
     </script>
 </head>
+
 <body onresize="onResize()" onpageshow="onResize()" >
 <header id="header">
     <?php
-    include 'actions/header.inc';
+        include 'actions/get_login_info.inc';
+        include 'actions/header.inc';
     ?>
 </header>
-<!--content here -->
+<main id="main">
+
+    <?php
+        include 'actions/print_profile.inc';
+    ?>
+</main>
 
 </body>
 

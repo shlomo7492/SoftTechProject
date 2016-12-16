@@ -15,7 +15,18 @@
     include 'actions/header.inc';
     ?>
 </header>
-<!--content here -->
+<main id="main">
+    <?php
+    if ($_POST["register"]==true){
+        include 'actions/register_update.inc';
+        header("Location: ?login");
+        die();
+    }
+    else {
+        include 'actions/register.inc';
+    }
+    ?>
+</main>
 
 </body>
 

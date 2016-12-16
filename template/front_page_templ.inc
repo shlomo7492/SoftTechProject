@@ -9,7 +9,9 @@
         <?php include 'js/myscript.js'; ?>
     </script>
 </head>
-
+<?php
+include 'actions/get_login_info.inc';
+?>
 <body onresize="onResize()" onload="onResize()" >
 <header id="header">
     <?php
@@ -19,8 +21,9 @@
 <main id="main">
     I AM HERE!!!
     <?php
-    echo $length.$urlArray[1]." : ".$urlArray[3];
-
+        echo $length.$urlArray[1]." : ".$urlArray[3]."</br>";
+    echo $_SESSION['logged']."Logged"."</br>    ";
+    echo $_SESSION['userID']."user ID";
     ?>
 <!--content here -->
 </main>
