@@ -10,7 +10,7 @@ session_start();
 <?php
 //Installing the blog
 include 'actions/config.inc';
-echo $dbname.":".$username.":".$password.":".$servername;
+
 if (($dbname == "" || $username =="" || $password=="") ||($_POST["step"] != null)) {
     include 'template/install_templ.inc';
 }
