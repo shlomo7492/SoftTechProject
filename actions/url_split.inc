@@ -29,6 +29,10 @@ switch ($length){
                     include 'template/login_page_templ.inc';
                 }
                     break;
+                case 'logout':{
+                    include 'template/logout_page_templ.inc';
+                }
+                    break;
                 case 'register':{
                     include 'template/register_page_templ.inc';
                 }
@@ -62,6 +66,10 @@ switch ($length){
             switch ($urlArray[3]){
                 case 'login':{
                     include 'template/login_page_templ.inc';
+                }
+                    break;
+                case 'logout':{
+                    include 'template/logout_page_templ.inc';
                 }
                     break;
                 case 'register':{

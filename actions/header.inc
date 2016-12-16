@@ -6,8 +6,6 @@
 
     <?php
 
-    $_SESSION['logged'] = false;
-
     if ($_SESSION['logged'] == true){
         echo "<div id='user_in'></div>";
 

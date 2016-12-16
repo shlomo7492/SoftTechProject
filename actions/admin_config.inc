@@ -11,13 +11,6 @@ $birthdate = trim($_POST['birthday']);
 $date_Registered = date('Y-m-d H:i:s');
 $accountType = "admin";
 
-echo 'name:'.$name."</br>";
-echo 'pass:'.$password ."</br>";
-echo 'mail:'.$email."</br>";
-echo 'sex:'.$gender."\n";
-echo 'BDay:'.$birthdate."\n";
-
-
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection

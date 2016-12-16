@@ -3,7 +3,7 @@
 
     <!--Login form-->
 
-    <form action="profile" method="post">
+    <form action="?profile" method="post">
         <span> E-mail:</span> <input type="text" name="email" size="50"><br><br>
         <span>Password:</span><input type="password" name="password" size="50"><br><br>
         <input type="hidden" name="login" value="true"><br>
