@@ -1,47 +1,185 @@
 /*----------------------Form handling----------------------*/
 form span
 {
-    margin-left:20px;
+    margin-left:15px;
     float: left;
 }
-form input
+#gender form span
 {
-    vertical-align:bottom;
+    margin-left:50px;
+    float: left;
+}
+form span input
+{
+    padding-left:50px;
+    margin-left:40px;
+    float: right;
+}
+
+form input, form select,form textarea, #cancel
+{
+    //vertical-align:bottom;
     float:right;
-    margin-right:20px;
+    margin-right:0px;
     border-radius:5px;
     border: 1px solid #555;
     padding:5px;
 }
-.submit
+form label {
+    vertical-align: top;
+    margin-left:20px;
+    float: left;
+}
+form textarea{
+    resize:none;
+    width: 66%;
+    height:150px;
+}
+form select
 {
+    width:68%;
+}
+form input
+{
+    width:66%;
+    margin-left:50px;
+}
+.submit,  .submit #cancel a:link , .submit #cancel a:active , .submit #cancel a:visited
+{
+    width:70px;
+    float:right;
     padding:5px;
     background:#558;
     font:normal 1em arial;
     border:1px solid #555;
     color:#CCC;
     margin-top:-5px;
+    margin-left: 5px;
+    cursor: pointer;
+
+
 }
-.submit:hover
+.submit:hover, .submit a:hover #cancel
 {
+    width:70px;
+    float:right;
     padding:5px;
     background:#88a;
     font:normal 1em arial;
     border:1px solid #555;
     color:#CCC;
     margin-top:-5px;
+    margin-left: 5px;
+    cursor: pointer;
+
+
+}
+.reset
+{
+    width:70px;
+    vertical-align: bottom;
+    float:right;
+    padding:5px;
+    background:#ae0909;
+    font:normal 1em arial;
+    border:1px solid #555;
+    color:#CCC;
+    margin-top:-5px;
+    margin-left: 5px;
+    cursor: pointer;
+
+
+}
+.reset:hover
+{
+    width:70px;
+    float:right;
+    padding:5px;
+    background:#88a;
+    font:normal 1em arial;
+    border:1px solid #555;
+    color:#CCC;
+    margin-top:-5px;
+    margin-left: 5px;
+    cursor: pointer;
+
+}
+.edit
+{
+    width:70px;
+    vertical-align: bottom;
+    float:right;
+    padding:5px;
+    background:#33aa77;
+    font:normal 1em arial;
+    border:1px solid #555;
+    color:#CCC;
+    margin-top:-5px;
+    margin-left: 5px;
+    cursor: pointer;
+
+
+}
+.edit:hover
+{
+    width:70px;
+    float:right;
+    padding:5px;
+    background:#88a;
+    font:normal 1em arial;
+    border:1px solid #555;
+    color:#CCC;
+    margin-top:-5px;
+    margin-left: 5px;
+    cursor: pointer;
+
+}
+.delete
+{
+    width:70px;
+    vertical-align: bottom;
+    float:right;
+    padding:5px;
+    background:red;
+    font:normal 1em arial;
+    border:1px solid #555;
+    color:#CCC;
+    margin-top:-5px;
+    margin-left: 5px;
+    cursor: pointer;
+
+}
+.delete:hover
+{
+    width:70px;
+    float:right;
+    padding:5px;
+    background:#88a;
+    font:normal 1em arial;
+    border:1px solid #555;
+    color:#CCC;
+    margin-top:-5px;
+    margin-left: 5px;
+    cursor: pointer;
 }
 .formFrame
 {
     margin-top:50px;
     margin-left:50px;
-    width:750px;
+    width:100%;
     background:#ddf;
-    padding:15px;
+    padding: 15px;
     padding-bottom:35px;
+    padding-top:35px;
     border: 1px solid #333; border-radius: 5px;
     font:normal 1em arial;
     position:relative;
+
+}
+form div {
+   width:100%;
+   display: table-row-group;
+
 }
 
 
@@ -55,6 +193,10 @@ h2
 }
 /*----------------------END Form handling----------------------*/
 
+body {
+    background-repeat: repeat-x;
+
+}
 /*--------------------------header--------------------------*/
 img {
     float:left;
@@ -62,7 +204,7 @@ img {
     margin-top:5px;
     position:relative;
     vertical-align:bottom;
-    max-width:12%;
+    max-width:11%;
     height: auto;
     min-width:100px;
     /*width: auto\9; /* ie8 */
@@ -71,13 +213,15 @@ img {
 #header {
     top:0px;
     left:0px;
-    margin-left: 0px;
-    margin-top: 0px;
-    width:100%;
+    margin-left: -8px;
+    margin-top: -8px;
+    width:110%;
     height:150px;
     background-color:#abd;
     background-image: url('image/header_bckgr.png');
-    position:fixed;
+    background-repeat: repeat-x;
+
+    position:relative;
 }
 .header_container {
     width:100%;
@@ -85,13 +229,13 @@ img {
     padding:5px;
 
 
-    background-repeat: relative;
+    background-repeat: no-repeat;
 
 }
 
 #main-menu{
     float:right;
-    margin-right:10%;
+    margin-right:15%;
 
 }
 .menu{
@@ -156,9 +300,16 @@ img {
 /*--------------------------Main--------------------------------*/
 #main
 {
-    top:50px;
-    margin-top:150px;
-    left:50px;
-    position:fixed;
+    margin-top:50px;
+    left:5%;
+    width:70%;
+    font: normal 1em arial;
+    position:relative;
+}
+#article_title h1 {
+    color: #555588;
+    font: italic 1em arial;
+
+
 }
 /*--------------------------END Main---------------------------*/
