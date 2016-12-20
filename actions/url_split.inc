@@ -49,7 +49,7 @@ switch ($length){
                     include 'template/sitenews_page_templ.inc';
                 }
                     break;
-                case 'blog':{
+                case 'blogs':{
                     include 'template/blog_page_templ.inc';
                 }
                     break;
@@ -88,7 +88,7 @@ switch ($length){
                     include 'template/sitenews_page_templ.inc';
                 }
                     break;
-                case 'blog':{
+                case 'blogs':{
                     include 'template/blog_page_templ.inc';
                 }
                     break;
@@ -101,12 +101,13 @@ switch ($length){
         }
         else{
             switch ($urlArray[1]){
-                case 'sitenews':{
+
+                case 'article':{
                     switch ($urlArray[2]){
                         case 'create':{
-                            include 'template/createnews_page_templ.inc';
+                            include 'template/createarticle_page_templ.inc';
                         }
-                        break;
+                            break;
                         default:{
                             echo "<h1>404:Page not found!!!</h1>";
                         }
@@ -114,18 +115,7 @@ switch ($length){
                     }
                 }
                     break;
-                case 'blog':{
-                    switch ($urlArray[2]){
-                        case 'create':{
-                            include 'template/createblog_page_templ.inc';
-                        }
-                            break;
-                        default:{
-                            echo "<h1>404:Page not found!!!</h1>";
-                        }
-                            break;
-                    }                             }
-                    break;
+
                 case 'profile':{
                     switch ($urlArray[2]){
                         case 'edit':{
@@ -155,10 +145,10 @@ switch ($length){
     case 3:{
         if ($urlArray[1] == 'softtechproject'){
             switch ($urlArray[3]){
-                case 'sitenews':{
+               case 'article':{
                     switch ($urlArray[4]){
                         case 'create':{
-                            include 'template/createnews_page_templ.inc';
+                            include 'template/createarticle_page_templ.inc';
                         }
                             break;
                         default:{
@@ -168,18 +158,7 @@ switch ($length){
                     }
                 }
                     break;
-                case 'blog':{
-                    switch ($urlArray[4]){
-                        case 'create':{
-                            include 'template/createblog_page_templ.inc';
-                        }
-                            break;
-                        default:{
-                            echo "<h1>404:Page not found!!!</h1>";
-                        }
-                            break;
-                    }                             }
-                    break;
+
                 case 'profile':{
                     switch ($urlArray[4]){
                         case 'edit':{
@@ -206,15 +185,20 @@ switch ($length){
         }
         else{
             switch ($urlArray[1]){
-                case 'sitenews':{
-                    $newsID=$urlArray[3];
+
+                case 'article':{
+                    $article_id = intval($urlArray[3]);
                     switch ($urlArray[2]){
                         case 'edit':{
-                            include 'template/editnews_page_templ.inc';
+                            include 'template/editarticle_page_templ.inc';
+                        }
+                            break;
+                        case 'view':{
+                            include 'template/article_view_page_templ.inc';
                         }
                             break;
                         case 'delete':{
-                            include 'template/deletenews_page_templ.inc';
+                            include 'template/deletearticle_page_templ.inc';
                         }
                             break;
                         default:{
@@ -224,24 +208,7 @@ switch ($length){
                     }
                 }
                     break;
-                case 'blog':{
-                    $blogID=$urlArray[3];
-                    switch ($urlArray[2]){
-                        case 'edit':{
-                            include 'template/editblog_page_templ.inc';
-                        }
-                            break;
-                        case 'delete':{
-                            include 'template/deleteblog_page_templ.inc';
-                        }
-                            break;
-                        default:{
-                            echo "<h1>404:Page not found!!!</h1>";
-                        }
-                            break;
-                    }
-                }
-                    break;
+
                 default:{
                     echo "<h1>404:Page not found!!!</h1>";
                 }
@@ -255,15 +222,20 @@ switch ($length){
     case 4:{
         if ($urlArray[1] == 'softtechproject') {
             switch ($urlArray[3]){
-                case 'sitenews':{
-                    $newsID=$urlArray[5];
+
+                case 'article':{
+                    $article_id = intval($urlArray[5]);
                     switch ($urlArray[4]){
                         case 'edit':{
-                            include 'template/editnews_page_templ.inc';
+                            include 'template/editarticle_page_templ.inc';
+                        }
+                            break;
+                        case 'view':{
+                            include 'template/article_view_page_templ.inc';
                         }
                             break;
                         case 'delete':{
-                            include 'template/deletenews_page_templ.inc';
+                            include 'template/deletearticle_page_templ.inc';
                         }
                             break;
                         default:{
@@ -273,23 +245,7 @@ switch ($length){
                     }
                 }
                     break;
-                case 'blog':{
-                    $blogID=$urlArray[5];
-                    switch ($urlArray[4]){
-                        case 'edit':{
-                            include 'template/editblog_page_templ.inc';
-                        }
-                            break;
-                        case 'delete':{
-                            include 'template/deleteblog_page_templ.inc';
-                        }
-                            break;
-                        default:{
-                            echo "<h1>404:Page not found!!!</h1>";
-                        }
-                            break;
-                    }                             }
-                    break;
+
                 default:{
                     echo "<h1>404:Page not found!!!</h1>";
                 }

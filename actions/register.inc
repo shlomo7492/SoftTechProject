@@ -5,14 +5,20 @@
     <!--Form to get all admin user data-->
 
     <form action="?register" method="post">
-        <span>Full Name:</span> <input type="text" name="fullName" size="50"><br><br>
-        <span>Password:</span><input type="password" name="password" size="50"><br><br>
-        <span> E-mail:</span> <input type="text" name="email" size="50"><br><br>
-        <span>Gender:</span> <span><input type="radio" name="gender" value="male" checked> Male</span> &nbsp;
-        <span><input type="radio" name="gender" value="female" > Female</span> <br><br>
-        <span>Birth date(YYYY-MM-DD):</span> <input type="text" name="birthday" size="50"><br><br>
-        <input type="hidden" name="register" value="true"><br>
-        <input type="submit" value="Register &#9658;" class="submit">
+
+                <span>Full Name:</span> <input type="text" name="fullName" ><br><br>
+                <span>Password:</span><input type="password" name="password" ><br><br>
+                <span> E-mail:</span> <input type="text" name="email" ><br><br>
+                <span id="gender">Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span style="display:inline;"> Male <input type="radio" name="gender" value="male" style="margin-top:-15px;" checked >&nbsp;</span>
+                <span style="display:inline;">Female <input type="radio" name="gender" value="female" style="margin-top:-15px;" > </span><br><br>
+                <span>Birth date(YYYY-MM-DD):</span><input type="text" name="birthday" ><br><br>
+                <input type="hidden" name="register" value="true"><br>
+
+
+                <input type="reset" value="Reset" class="reset">
+                <input type="submit" value="Register &#9658;" class="submit">
+
     </form>
 </div>
 
