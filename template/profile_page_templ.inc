@@ -21,6 +21,9 @@
 
     <?php
         include 'actions/print_profile.inc';
+        if ($_SESSION['logged'] == true){
+            include 'actions/profile_buttons.inc';
+        }
     ?>
 </main>
 

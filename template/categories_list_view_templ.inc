@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Site title:: Contact us</title>
+    <title>My Site title:: List of Categories</title>
     <style>
         <?php include 'css/styles.css'; ?>
     </style>
@@ -12,11 +12,11 @@
 <body onresize="onResize()" onpageshow="onResize()" >
 <header id="header">
     <?php
-     include 'actions/header.inc';
+    include 'actions/header.inc';
     ?>
 </header>
 <main id="main">
-    <h2>The contact form is not ready yet... pls wait for the update.</h2>
+    <h2>This page is under construction yet... pls wait for the update.</h2>
 </main>
 </body>
 
