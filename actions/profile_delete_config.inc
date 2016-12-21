@@ -2,9 +2,6 @@
 
     <?php
 
-    $title = $_POST["title"];
-    $content = $_POST["content"];
-    $user_id = $_SESSION["userID"];
 
 
     // Create connection
@@ -15,15 +12,15 @@
     }
     else
     {
-        // echo 'Connection successfull';
+        echo 'Connection successfull';
     }
 
     //Inserts data in to the Database
 
-    $sql = "UPDATE `$dbname`.`Articles` SET `title`='$title', `content`='$content'  WHERE `article_id`=$article_id";
+    $sql = "DELETE FROM `$dbname`.`Users` WHERE `user_id`=$userid";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Article: ".$title." edited successfully";
+        echo "User with ID: ".$userid." edited successfully";
     }
     else {
         echo "Error: " . $sql . "<br>" . $conn->error;

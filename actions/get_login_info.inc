@@ -18,6 +18,7 @@ if ($_POST['login']==true)
             $_SESSION['logged'] = true;
             $_SESSION['userID'] = $row["user_id"];
             $_SESSION['userName'] = $row["fullName"];
+            $_SESSION['userPass'] = $row["user_Pass"];
             $_SESSION['email'] = $row["email"];
             $_SESSION['gender'] = $row["gender"];
             $_SESSION['birthdate'] = $row["birthdate"];

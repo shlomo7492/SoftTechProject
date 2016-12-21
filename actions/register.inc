@@ -10,8 +10,8 @@
                 <span>Password:</span><input type="password" name="password" ><br><br>
                 <span> E-mail:</span> <input type="text" name="email" ><br><br>
                 <span id="gender">Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span style="display:inline;"> Male <input type="radio" name="gender" value="male" style="margin-top:-15px;" checked >&nbsp;</span>
-                <span style="display:inline;">Female <input type="radio" name="gender" value="female" style="margin-top:-15px;" > </span><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span style="display:inline;float:right;"> Male <input type="radio" name="gender" value="male" style="margin-top:-15px;" checked >&nbsp;</span>
+                <span style="display:inline;float:right;">Female <input type="radio" name="gender" value="female" style="margin-top:-15px;" > </span><br><br>
                 <span>Birth date(YYYY-MM-DD):</span><input type="text" name="birthday" ><br><br>
                 <input type="hidden" name="register" value="true"><br>
 

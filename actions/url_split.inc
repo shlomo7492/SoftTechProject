@@ -53,6 +53,18 @@ switch ($length){
                     include 'template/blog_page_templ.inc';
                 }
                     break;
+                case 'users':{
+                    include 'template/profile_list_view_templ.inc';
+                }
+                    break;
+                case 'categories':{
+                    include 'template/categories_list_view_templ.inc';
+                }
+                    break;
+                case 'taxonomy':{
+                    include 'template/taxonomy_dict_view_templ.inc';
+                }
+                    break;
                 default:{
                     echo "<h1>404:Page not found!!!</h1>";
                 }
@@ -90,6 +102,18 @@ switch ($length){
                     break;
                 case 'blogs':{
                     include 'template/blog_page_templ.inc';
+                }
+                    break;
+                case 'users':{
+                    include 'template/profile_list_view_templ.inc';
+                }
+                    break;
+                case 'categories':{
+                    include 'template/categories_list_view_templ.inc';
+                }
+                    break;
+                case 'taxonomy':{
+                    include 'template/taxonomy_dict_view_templ.inc';
                 }
                     break;
                 default:{
